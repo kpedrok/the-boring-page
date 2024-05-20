@@ -19,33 +19,33 @@ import { cn } from '@/lib/utils'
 const components: { title: string; href: string; description: string }[] = [
   {
     title: 'Alert Dialog',
-    href: '/docs/primitives/alert-dialog',
+    href: '/',
     description: 'A modal dialog that interrupts the user with important content and expects a response.',
   },
   {
     title: 'Hover Card',
-    href: '/docs/primitives/hover-card',
+    href: '/',
     description: 'For sighted users to preview content available behind a link.',
   },
   {
     title: 'Progress',
-    href: '/docs/primitives/progress',
+    href: '/',
     description:
       'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
   },
   {
     title: 'Scroll-area',
-    href: '/docs/primitives/scroll-area',
+    href: '/',
     description: 'Visually or semantically separates content.',
   },
   {
     title: 'Tabs',
-    href: '/docs/primitives/tabs',
+    href: '/',
     description: 'A set of layered sections of content—known as tab panels—that are displayed one at a time.',
   },
   {
     title: 'Tooltip',
-    href: '/docs/primitives/tooltip',
+    href: '/',
     description:
       'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
   },
@@ -80,13 +80,13 @@ export function NavigationMenuDemo() {
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem href='/docs' title='Introduction'>
+              <ListItem href='/' title='Introduction'>
                 Re-usable components built using Radix UI and Tailwind CSS.
               </ListItem>
-              <ListItem href='/docs/installation' title='Installation'>
+              <ListItem href='/' title='Installation'>
                 How to install dependencies and structure your app.
               </ListItem>
-              <ListItem href='/docs/primitives/typography' title='Typography'>
+              <ListItem href='/' title='Typography'>
                 Styles for headings, paragraphs, lists...etc
               </ListItem>
             </ul>
@@ -105,7 +105,7 @@ export function NavigationMenuDemo() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href='/docs' legacyBehavior passHref>
+          <Link href='/' legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>Documentation</NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
