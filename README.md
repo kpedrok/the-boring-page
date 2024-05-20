@@ -1,6 +1,6 @@
 # Next.js Landing Page Template
 
-An open-source landing page template built with Next.js, TailwindCSS, and all shadcn/ui components, organized using the Atomic Design System.
+An open-source landing page template built with Next.js, TailwindCSS, and all shadcn/ui components, organized using a improved version of Atomic Design System.
 
 <a href="https://atomic-shad.vercel.app/"><strong>Preview - https://atomic-shad.vercel.app/</strong></a> ·
 <a href="#features"><strong>Features</strong></a> ·
@@ -14,8 +14,8 @@ An open-source landing page template built with Next.js, TailwindCSS, and all sh
 - [TailwindCSS](https://tailwindcss.com) for styling
 - [ShadCn/UI](https://ui.shadcn.com)
   - Built with [Radix UI](https://radix-ui.com) for headless component primitives
-- Organized using the [Atomic Design System](https://bradfrost.com/blog/post/atomic-web-design/)
-
+- Organized using the Atomic Design System
+  - The Atomic Design System was applied with slight modifications. Atoms include typography, padding, and colors. Molecules include buttons and inputs...
 ## Setup
 
 1. Clone the repository:
