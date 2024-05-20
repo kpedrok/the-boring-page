@@ -1,17 +1,10 @@
-<a href="https://your-repository-url">
-  <h1 align="center">Next.js Landing Page Template</h1>
-</a>
+# Next.js Landing Page Template
 
-<p align="center">
-  An open-source landing page template built with Next.js, TailwindCSS, and ShadCn/UI, organized using the Atomic Design System.
-</p>
+An open-source landing page template built with Next.js, TailwindCSS, and ShadCn/UI, organized using the Atomic Design System.
 
-<p align="center">
-  <a href="#features"><strong>Features</strong></a> ·
-  <a href="#setup"><strong>Setup</strong></a> ·
-  <a href="#authors"><strong>Authors</strong></a>
-</p>
-<br/>
+<a href="#features"><strong>Features</strong></a> ·
+<a href="#setup"><strong>Setup</strong></a> ·
+<a href="#authors"><strong>Authors</strong></a>
 
 ## Features
 
@@ -27,20 +20,20 @@
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repository-name.git
+   git clone https://github.com/kpedrok/nextjs-atomic-shadcn-ui-landing-page.git
    ```
 
 2. Install dependencies:
 
    ```bash
-   cd your-repository-name
-   npm install
+   cd nextjs-atomic-shadcn-ui-landing-page
+   pnpm install
    ```
 
 3. Start the development server:
 
    ```bash
-   npm run dev
+   pnpm dev
    ```
 
 Your app should now be running on [http://localhost:3000](http://localhost:3000).
