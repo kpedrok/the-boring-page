@@ -34,3 +34,23 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+# Shadcn/UI
+
+## add
+
+Use the add command to add components and dependencies to your project.
+
+npx shadcn-ui@latest add [component]
+or
+pnpm dlx shadcn-ui@latest add
+
+## diff (experimental)
+
+You can use the diff command to check for updates against the registry.
+
+Run the following command to get a list of components that have updates available:
+
+npx shadcn-ui diff
+or
+pnpm dlx shadcn-ui diff
