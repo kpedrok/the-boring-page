@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className='bg-gray-900 py-8 text-gray-400'>
+    <footer className='bg-primary py-8 text-secondary'>
       <div className='container mx-auto px-4 md:px-6 lg:px-8'>
         <div className='grid gap-8 md:grid-cols-2 lg:grid-cols-4'>
           <div>
@@ -107,7 +107,7 @@ export default function Footer() {
           </div>
         </div>
         <div className='mt-8 border-t border-gray-800 pt-8 text-center'>
-          <p className='text-sm'>© 2024 Acme Inc. All rights reserved.</p>
+          <p className='text-sm'>© 2024 Atomic Shad. All rights reserved.</p>
         </div>
       </div>
     </footer>
