@@ -1,3 +1,5 @@
+import Footer from '@/components/organisms/shadcn/footer'
+import Header from '@/components/organisms/shadcn/header'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
@@ -16,7 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Header></Header>
+        <main>{children}</main>
+        <Footer></Footer>
+      </body>
     </html>
   )
 }
