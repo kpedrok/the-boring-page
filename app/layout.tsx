@@ -1,5 +1,5 @@
-import Footer from '@/components/organisms/shadcn/footer'
-import Header from '@/components/organisms/shadcn/header'
+import Footer from '@/components/organisms/footer'
+import Header from '@/components/organisms/header'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
