@@ -8,7 +8,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Atomic Shad',
+  title: 'The Boring Page',
   description: 'An open-source landing page template built with Next.js and all shadcn/ui components.',
   icons: '/favicon.svg',
 }

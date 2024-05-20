@@ -107,7 +107,7 @@ export default function Footer() {
           </div>
         </div>
         <div className='mt-8 border-t border-gray-800 pt-8 text-center'>
-          <p className='text-sm'>© 2024 Atomic Shad. All rights reserved.</p>
+          <p className='text-sm'>© 2024 The Boring Page. All rights reserved.</p>
         </div>
       </div>
     </footer>
