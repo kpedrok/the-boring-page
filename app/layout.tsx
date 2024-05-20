@@ -1,5 +1,6 @@
 import Footer from '@/components/organisms/footer'
 import Header from '@/components/organisms/header'
+import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
@@ -22,6 +23,7 @@ export default function RootLayout({
         <Header></Header>
         <main>{children}</main>
         <Footer></Footer>
+        <Analytics />
       </body>
     </html>
   )
