@@ -2,6 +2,7 @@ import { AspectRatio } from '@/components/molecules/shadcn/aspect-ratio'
 import { Badge } from '@/components/molecules/shadcn/badge'
 import { Button } from '@/components/molecules/shadcn/button'
 import { Input } from '@/components/molecules/shadcn/input'
+import { NavigationMenuDemo } from '@/components/organisms/shadcn/navigation-menu'
 import Image from 'next/image'
 import Link from 'next/link'
 import { JSX, SVGProps } from 'react'
@@ -9,7 +10,7 @@ import { JSX, SVGProps } from 'react'
 export default function Home() {
   return (
     <>
-      <header className='flex items-center justify-between px-4 py-3 md:px-6 lg:px-8'>
+      <header className='fixed top-0 left-0 right-0 z-50 bg-white shadow-md flex items-center justify-between px-4 py-3 md:px-6 lg:px-8 '>
         <Link className='flex items-center' href='#'>
           <MountainIcon className='h-6 w-6' />
           <span className='ml-2 text-lg font-semibold'>Acme Inc</span>
@@ -20,7 +21,7 @@ export default function Home() {
         <Button variant='default'>Join Waitlist</Button>
       </header>
       <main>
-        <section className='bg-gray-100 py-16 md:py-24 lg:py-32'>
+        <section className='py-24 lg:py-32'>
           <div className='container mx-auto px-4 md:px-6 lg:px-8'>
             <div className='grid items-center gap-8 lg:grid-cols-2'>
               <div className='space-y-6'>
@@ -41,6 +42,8 @@ export default function Home() {
                     src='https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=800&dpr=2&q=80    '
                     alt='Image'
                     fill
+                    sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+                    priority={true}
                     className='rounded-md object-cover'
                   />
                 </AspectRatio>
@@ -59,7 +62,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className='py-16 md:py-24 lg:py-32'>
+        <section className='py-16 md:py-24 lg:py-32 bg-primary text-secondary'>
           <div className='container mx-auto px-4 md:px-6 lg:px-8'>
             <div className='grid gap-8 lg:grid-cols-2'>
               <AspectRatio ratio={16 / 9}>
@@ -67,42 +70,47 @@ export default function Home() {
                   src='https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=800&dpr=2&q=80    '
                   alt='Image'
                   fill
+                  priority={false}
+                  sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                   className='rounded-md object-cover'
                 />
               </AspectRatio>
               <div className='space-y-6'>
-                <Badge className='text-sm font-medium'> New Features</Badge>
+                <Badge variant='secondary' className='px-3 py-1 text-sm font-medium'>
+                  {' '}
+                  New Features
+                </Badge>
                 <h2 className='text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl'>
                   Elevate your business with our cutting-edge features
                 </h2>
-                <p className='text-gray-600 dark:text-gray-400'>
+                <p className='text-muted-foreground'>
                   Our platform offers a suite of powerful features to help you streamline your workflows and drive your
                   business forward.
                 </p>
                 <ul className='space-y-4'>
                   <li className='flex items-start space-x-2'>
-                    <CheckIcon className='h-5 w-5 text-primary' />
+                    <CheckIcon className='h-5 w-5 text-secondary' />
                     <div>
                       <h3 className='text-lg font-semibold'>Advanced Analytics</h3>
-                      <p className='text-gray-600 dark:text-gray-400'>
+                      <p className='text-muted-foreground'>
                         Gain deeper insights into your data with our robust analytics tools.
                       </p>
                     </div>
                   </li>
                   <li className='flex items-start space-x-2'>
-                    <CheckIcon className='h-5 w-5 text-primary' />
+                    <CheckIcon className='h-5 w-5 text-secondary' />
                     <div>
                       <h3 className='text-lg font-semibold'>Seamless Collaboration</h3>
-                      <p className='text-gray-600 dark:text-gray-400'>
+                      <p className='text-muted-foreground'>
                         Empower your team to work together more efficiently with our collaboration features.
                       </p>
                     </div>
                   </li>
                   <li className='flex items-start space-x-2'>
-                    <CheckIcon className='h-5 w-5 text-primary' />
+                    <CheckIcon className='h-5 w-5 text-secondary' />
                     <div>
                       <h3 className='text-lg font-semibold'>Scalable Infrastructure</h3>
-                      <p className='text-gray-600 dark:text-gray-400'>
+                      <p className='text-muted-foreground'>
                         Easily scale your application with our reliable and high-performance infrastructure.
                       </p>
                     </div>
@@ -115,13 +123,11 @@ export default function Home() {
         <section className='bg-gray-100 py-16 md:py-24 lg:py-32'>
           <div className='container mx-auto px-4 md:px-6 lg:px-8'>
             <div className='mx-auto max-w-2xl text-center'>
-              <div className='rounded-lg bg-gray-100 px-3 py-1 text-sm font-medium dark:bg-gray-800'>
-                Join the Waitlist
-              </div>
+              <Badge className='px-3 py-1 text-sm font-medium'>Join the Waitlist</Badge>
               <h2 className='mt-4 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl'>
                 Be the first to experience our platform
               </h2>
-              <p className='mt-4 text-gray-600 dark:text-gray-400'>
+              <p className='mt-4 text-muted-foreground'>
                 Sign up for our waitlist and be the first to access our cutting-edge features and innovative solutions.
               </p>
               <div className='mt-8 flex justify-center'>

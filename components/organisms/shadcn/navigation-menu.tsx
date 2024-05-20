@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import * as React from 'react'
 
+import { AspectRatio } from '@/components/molecules/shadcn/aspect-ratio'
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -12,9 +13,8 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from '@/components/ui/navigation-menu'
+} from '@/components/molecules/shadcn/navigation-menu'
 import { cn } from '@/lib/utils'
-import { AspectRatio } from '../ui/aspect-ratio'
 
 const components: { title: string; href: string; description: string }[] = [
   {
