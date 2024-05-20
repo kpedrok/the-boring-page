@@ -1,6 +1,7 @@
 import MountainIcon from '@/components/icons/mountain-icon'
 import { Button } from '@/components/molecules/shadcn/button'
 import { NavigationMenuDemo } from '@/components/organisms/shadcn/navigation-menu'
+import { Github } from 'lucide-react'
 import Link from 'next/link'
 
 export default function Header() {
@@ -13,7 +14,12 @@ export default function Header() {
       <nav className='hidden space-x-4 md:flex'>
         <NavigationMenuDemo></NavigationMenuDemo>
       </nav>
-      <Button variant='default'>Join Waitlist</Button>
+      <Link target='_blank' href='https://github.com/kpedrok/nextjs-atomic-shadcn-ui-landing-page'>
+        <Button variant='default'>
+          <Github />
+          <p className='pl-1'>Star on GitHub</p>
+        </Button>
+      </Link>
     </header>
   )
 }
