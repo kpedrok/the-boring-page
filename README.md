@@ -2,6 +2,7 @@
 
 An open-source landing page template built with Next.js, TailwindCSS, and ShadCn/UI, organized using the Atomic Design System.
 
+<a href="https://atomic-shad.vercel.app/"><strong>Preview</strong></a> ·
 <a href="#features"><strong>Features</strong></a> ·
 <a href="#setup"><strong>Setup</strong></a> ·
 <a href="#authors"><strong>Authors</strong></a>
