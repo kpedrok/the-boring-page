@@ -9,7 +9,7 @@ export default function WaitingList() {
         <div className='mx-auto max-w-2xl text-center'>
           <Badge className='px-3 py-1 text-sm font-medium'>Join the Waitlist</Badge>
           <h2 className='mt-4 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl'>
-            Be the first to experience our platform
+            Be the first to experience our platform!
           </h2>
           <p className='mt-4 text-muted-foreground'>
             Sign up for our waitlist and be the first to access our cutting-edge features and innovative solutions.
