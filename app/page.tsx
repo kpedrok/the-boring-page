@@ -1,13 +1,9 @@
-import Features from '@/components/templates/features'
-import Hero from '@/components/templates/hero'
-import WaitingList from '@/components/templates/waiting-list'
+import { Hero } from '../components/templates/hero';
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <>
-      <Hero></Hero>
-      <Features></Features>
-      <WaitingList></WaitingList>
-    </>
-  )
+    <div>
+      <Hero />
+    </div>
+  );
 }
